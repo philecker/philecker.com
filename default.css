@@ -1,0 +1,273 @@
+html, body {
+  background-color: #e6e6e6;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+  font-size: 1em;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 1.75em;
+}
+h1 img {
+  height: 26px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+h2 {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 100;
+  color: #34495e73;
+  padding-left: 35px;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #34495e73;
+  opacity: .5;
+}
+section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+span.strike {
+  text-decoration: line-through;
+  color: #34495e73;
+}
+.main__content {
+  margin: 60px 0;
+}
+.main__content p {
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+}
+#about {
+  position: relative;
+  background-color: #efefef;
+  z-index: 1;
+}
+#about:after {
+  background: #efefef;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-2deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+article {
+  padding: 20px;
+}
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  opacity: 1;
+}
+::selection {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+::-moz-selection {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+a::selection {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+a::-moz-selection {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+a {
+  font-weight: 600;
+  color: #2c3e50;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+a:hover {
+  font-weight: 600;
+  border-bottom: 1px solid;
+}
+i {
+  color: #2ecc71;
+}
+button {
+  max-width: 100%;
+  background: #2ecc71 !important;
+  box-shadow: 0 6px #17a151;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+button:hover {
+  box-shadow: 0 4px #17a151;
+  top: 2px;
+}
+button i {
+  color: #2c3e50;
+  font-size: 2em;
+}
+#social ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#social li {
+  display: inline-block;
+  list-style: none;
+}
+#social i {
+  font-size: 3em;
+}
+#social i.icon-linkedin-circled {
+  font-size: 2.75em;
+}
+#social a {
+  border-bottom: 0;
+}
+#example {
+  display: none;
+}
+#purchase-coffee {
+  text-align: center;
+}
+
+@media only screen and (min-width : 1280px) and (min-height: 750px) {
+  #about {
+    max-width: 800px;
+  }
+  #about:after {
+    background: none;
+    position: relative;
+  }
+  section {
+    background: linear-gradient(115deg, #efefef 50%, #e6e6e6 50%);
+  }
+  article {
+    padding: 5em;
+    width: 40%;
+  }
+  pre, code {
+    font-size: .95em;
+    font-family: 'Source Code Pro', monospace;
+  }
+  #legal {
+    padding: 5em;
+    color: #2c3e50;
+    text-align: left;
+  }
+  #legal p {
+    padding: 10px;
+  }
+  #about {
+    background-color: inherit;
+  }
+  .footer__text {
+    margin-top: 40px;
+  }
+  .footer__text p {
+    opacity: .3;
+    font-size: .75em;
+    font-style: italic;
+  }
+  #example {
+    width: 45%;
+    max-width: 800px;
+    height: 350px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10000;
+    border-radius: 5px;
+    border: 3px solid #34495e;
+    margin: 5em;
+    padding: 0;
+    overflow: hidden;
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  #example .calendar {
+    padding: 20px;
+    min-height: auto;
+  }
+  #example .color-text-secondary {
+    display: none;
+  }
+  #social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #social ul {
+    text-align: right;
+  }
+  #purchase-coffee {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width : 1366px) {
+  #legal {
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-height : 600px) {
+  #example {
+    display: none;
+  }
+  #legal {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1960px) {
+  section {
+    background: linear-gradient(135deg, #efefef 50%, #e6e6e6 50%);
+  }
+}
