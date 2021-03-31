@@ -46,10 +46,6 @@ section {
   height: 100%;
   width: 100%;
 }
-span.strike {
-  text-decoration: line-through;
-  color: #34495e73;
-}
 .main__content {
   margin: 60px 0;
 }
@@ -64,7 +60,7 @@ span.strike {
   z-index: 1;
 }
 #about:after {
-  background: #efefef;
+  /* background: #efefef; */
   bottom: 0;
   content: '';
   display: block;
@@ -128,7 +124,7 @@ button {
   cursor: pointer;
   padding: 25px 80px;
   display: inline-block;
-  margin: 15px 0;
+  margin: 15px 0 80px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -180,7 +176,7 @@ button i {
     position: relative;
   }
   section {
-    background: linear-gradient(115deg, #efefef 50%, #e6e6e6 50%);
+    background: linear-gradient(115deg, #ffffff 50%, #e6e6e6 50%);
   }
   article {
     padding: 5em;
@@ -209,42 +205,6 @@ button i {
     font-size: .75em;
     font-style: italic;
   }
-  #example {
-    width: 45%;
-    max-width: 800px;
-    height: 350px;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 10000;
-    border-radius: 5px;
-    border: 3px solid #34495e;
-    margin: 5em;
-    padding: 0;
-    overflow: hidden;
-    background-color: #efefef;
-    border-radius: 10px;
-    padding: 30px;
-  }
-  #example .calendar {
-    padding: 20px;
-    min-height: auto;
-  }
-  #example .color-text-secondary {
-    display: none;
-  }
-  #social {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  #social ul {
-    text-align: right;
-  }
-  #purchase-coffee {
-    text-align: left;
-  }
 }
 
 @media only screen and (min-width : 1366px) {
@@ -266,7 +226,7 @@ button i {
 }
 
 @media only screen and (min-width: 1960px) {
-  section {
-    background: linear-gradient(135deg, #efefef 50%, #e6e6e6 50%);
-  }
+  /* section {
+    background: linear-gradient(135deg, #ffffff 50%, #e6e6e6 50%);
+  } */
 }
