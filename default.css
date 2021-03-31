@@ -224,9 +224,3 @@ button i {
     display: none;
   }
 }
-
-@media only screen and (min-width: 1960px) {
-  /* section {
-    background: linear-gradient(135deg, #ffffff 50%, #e6e6e6 50%);
-  } */
-}
