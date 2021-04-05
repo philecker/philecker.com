@@ -60,7 +60,6 @@ section {
   z-index: 1;
 }
 #about:after {
-  /* background: #efefef; */
   bottom: 0;
   content: '';
   display: block;
