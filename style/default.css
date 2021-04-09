@@ -7,23 +7,28 @@ html, body {
   color: #2c3e50;
   font-size: 1em;
 }
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+
 h1 {
   font-size: 1.75em;
 }
+
 h1 img {
   height: 26px;
   vertical-align: middle;
   margin-left: 5px;
 }
+
 h2 {
   font-size: 1em;
   font-style: italic;
@@ -31,6 +36,7 @@ h2 {
   color: #34495e73;
   padding-left: 35px;
 }
+
 h2::before {
   content: "";
   position: absolute;
@@ -41,24 +47,29 @@ h2::before {
   background: #34495e73;
   opacity: .5;
 }
+
 section {
   position: relative;
   height: 100%;
   width: 100%;
 }
+
 .main__content {
   margin: 60px 0;
 }
+
 .main__content p {
   font-size: 1.2em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
 }
+
 #about {
   position: relative;
   background-color: #efefef;
   z-index: 1;
 }
+
 #about:after {
   bottom: 0;
   content: '';
@@ -71,42 +82,52 @@ section {
   transform-origin: 100%;
   z-index: -1;
 }
+
 article {
   padding: 20px;
 }
+
 p {
   font-size: 1.1em;
   font-weight: 300;
   opacity: 1;
   line-height: 1.25;
 }
+
 ::selection {
   background-color: #2ecc71;
   color: #ffffff;
 }
+
 ::-moz-selection {
   background-color: #2ecc71;
   color: #ffffff;
 }
+
 a::selection {
   background-color: #2ecc71;
   color: #ffffff;
 }
+
 a::-moz-selection {
   background-color: #2ecc71;
   color: #ffffff;
 }
+
 a {
   color: #2c3e50;
   text-decoration: none;
   border-bottom: 1px dotted;
 }
+
 a:hover {
   border-bottom: 1px solid;
 }
+
 i {
   color: #2ecc71;
 }
+
 button {
   max-width: 100%;
   background: #2ecc71 !important;
@@ -133,35 +154,44 @@ button {
   -moz-transition: all 0.1s;
   transition: all 0.1s;
 }
+
 button:hover {
   box-shadow: 0 4px #17a151;
   top: 2px;
 }
+
 button i {
   color: #2c3e50;
   font-size: 2em;
 }
+
 #social ul {
   text-align: center;
   margin: 0;
   padding: 0;
 }
+
 #social li {
   display: inline-block;
   list-style: none;
 }
+
 #social i {
   font-size: 3em;
 }
+
 #social i.icon-linkedin-circled {
   font-size: 2.75em;
 }
+
 #social a {
   border-bottom: 0;
 }
+
 #example {
   display: none;
 }
+
 #purchase-coffee {
   text-align: center;
 }
@@ -170,56 +200,22 @@ button i {
   #about {
     max-width: 800px;
   }
+
   #about:after {
     background: none;
     position: relative;
   }
+
   section {
     background: linear-gradient(115deg, #ffffff 50%, #e6e6e6 50%);
   }
+
   article {
     padding: 5em;
     width: 40%;
   }
-  pre, code {
-    font-size: .95em;
-    font-family: 'Source Code Pro', monospace;
-  }
-  #legal {
-    padding: 5em;
-    color: #2c3e50;
-    text-align: left;
-  }
-  #legal p {
-    padding: 10px;
-  }
+
   #about {
     background-color: inherit;
-  }
-  .footer__text {
-    margin-top: 40px;
-  }
-  .footer__text p {
-    opacity: .3;
-    font-size: .75em;
-    font-style: italic;
-  }
-}
-
-@media only screen and (min-width : 1366px) {
-  #legal {
-    text-align: left;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-}
-
-@media only screen and (max-height : 600px) {
-  #example {
-    display: none;
-  }
-  #legal {
-    display: none;
   }
 }
