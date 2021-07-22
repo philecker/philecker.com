@@ -191,4 +191,8 @@ button i {
   #about {
     background-color: inherit;
   }
+
+  #github__button {
+    text-align: left;
+  }
 }
