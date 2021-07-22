@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background-color: #efefef;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -165,38 +166,11 @@ button i {
   font-size: 2em;
 }
 
-#social ul {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-#social li {
-  display: inline-block;
-  list-style: none;
-}
-
-#social i {
-  font-size: 3em;
-}
-
-#social i.icon-linkedin-circled {
-  font-size: 2.75em;
-}
-
-#social a {
-  border-bottom: 0;
-}
-
-#example {
-  display: none;
-}
-
-#purchase-coffee {
+#github__button {
   text-align: center;
 }
 
-@media only screen and (min-width : 1280px) and (min-height: 750px) {
+@media only screen and (min-width : 1080px) and (min-height: 750px) {
   #about {
     max-width: 800px;
   }
